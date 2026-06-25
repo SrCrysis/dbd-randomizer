@@ -1,0 +1,73 @@
+# deploy.yml — GitHub Actions Workflow
+#
+# ¿Qué es GitHub Actions?
+# Es un sistema de CI/CD (Continuous Integration / Continuous Deployment)
+# que ejecuta tareas automáticamente cuando haces push a GitHub.
+#
+# Este workflow hace:
+# 1. Se activa cuando haces `git push` a la rama main
+# 2. Instala las dependencias con npm
+# 3. Hace `npm run build` (genera los archivos estáticos en /dist)
+# 4. Sube el contenido de /dist a la rama gh-pages (que GitHub Pages sirve)
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]   # Solo se activa al hacer push a main
+  workflow_dispatch:   # También permite lanzarlo manualmente desde la UI de GitHub
+
+# Permisos necesarios para escribir en GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Evita deploys simultáneos
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest  # La VM donde corre el workflow
+
+    steps:
+      # 1. Clonar el repositorio en la VM
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Configurar Node.js v20
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm  # Cachea node_modules para acelerar futuros deploys
+
+      # 3. Instalar dependencias (equivale a `npm install`)
+      - name: Install dependencies
+        run: npm ci  # `npm ci` es más estricto que `npm install` — ideal para CI
+
+      # 4. Compilar la aplicación para producción
+      - name: Build
+        run: npm run build
+        # Esto genera la carpeta /dist con los archivos optimizados
+
+      # 5. Configurar GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      # 6. Subir el contenido de /dist como artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist  # La carpeta que genera Vite
+
+      # 7. Hacer el deploy a GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,67 @@
+/* Tailwind base, components y utilities — esto es lo que genera todas las clases */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables globales y estilos base */
+@layer base {
+  body {
+    @apply bg-fog-950 text-ash-100 font-body;
+    /* Textura de niebla sutil en el fondo */
+    background-image: 
+      radial-gradient(ellipse at 20% 50%, rgba(192, 57, 43, 0.04) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, rgba(26, 26, 40, 0.8) 0%, transparent 50%);
+  }
+
+  h1, h2, h3 {
+    @apply font-display;
+  }
+}
+
+/* Componentes reutilizables definidos con Tailwind */
+@layer components {
+  /* Botón primario — color sangre */
+  .btn-primary {
+    @apply bg-blood-500 hover:bg-blood-400 text-white font-semibold 
+           px-6 py-3 rounded-sm transition-all duration-200
+           border border-blood-400 hover:border-blood-300
+           hover:shadow-[0_0_20px_rgba(231,76,60,0.4)]
+           active:scale-95;
+  }
+
+  /* Botón secundario — gris oscuro */
+  .btn-secondary {
+    @apply bg-fog-800 hover:bg-fog-700 text-ash-300 font-medium
+           px-6 py-3 rounded-sm transition-all duration-200
+           border border-fog-700 hover:border-ash-400
+           active:scale-95;
+  }
+
+  /* Card genérica */
+  .card {
+    @apply bg-fog-800 border border-fog-700 rounded-sm p-4;
+  }
+
+  /* Card con efecto hover */
+  .card-hover {
+    @apply card hover:border-blood-500 hover:bg-fog-700 
+           transition-all duration-200 cursor-pointer;
+  }
+
+  /* Badge/tag para tipos de perks */
+  .perk-badge {
+    @apply text-xs font-medium px-2 py-0.5 rounded-sm uppercase tracking-wide;
+  }
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #11111a;
+}
+::-webkit-scrollbar-thumb {
+  background: #c0392b;
+  border-radius: 3px;
+}
