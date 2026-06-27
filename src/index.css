@@ -5,6 +5,13 @@
 
 /* Variables globales y estilos base */
 @layer base {
+  * {
+  user-select: none;
+}
+
+input, textarea {
+  user-select: text;
+}
   body {
     @apply bg-fog-950 text-ash-100 font-body;
     /* Textura de niebla sutil en el fondo */

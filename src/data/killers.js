@@ -1,13 +1,10 @@
-// killers.js — Todos los asesinos de Dead by Daylight
-// power: el poder especial del asesino
+
 
 export const killers = [
-  // ═══════════════════════════
-  // ASESINOS BASE
-  // ═══════════════════════════
+
   {
     id: 'trapper',
-    name: 'The Trapper',
+    name: 'El Trampero',
     isDefault: true,
     perks: [
       { id: 'agitation', name: 'Agitation', desc: 'Al cargar a un superviviente, ganas Haste y tu radio de terror aumenta.' },
@@ -17,7 +14,7 @@ export const killers = [
   },
   {
     id: 'wraith',
-    name: 'The Wraith',
+    name: 'El Espectro',
     isDefault: true,
     perks: [
       { id: 'bloodhound', name: 'Bloodhound', desc: 'Los charcos de sangre son más visibles para ti.' },
@@ -27,7 +24,7 @@ export const killers = [
   },
   {
     id: 'hillbilly',
-    name: 'The Hillbilly',
+    name: 'El HillBilly',
     isDefault: true,
     perks: [
       { id: 'enduring', name: 'Enduring', desc: 'La reducción de velocidad tras golpear pallets se recupera más rápido.' },
@@ -37,7 +34,7 @@ export const killers = [
   },
   {
     id: 'nurse',
-    name: 'The Nurse',
+    name: 'La Enfermera',
     isDefault: true,
     perks: [
       { id: 'a_nurses_calling', name: "A Nurse's Calling", desc: 'Ves las auras de supervivientes que se están curando a 28/30/32m.' },
@@ -47,7 +44,7 @@ export const killers = [
   },
   {
     id: 'shape',
-    name: 'The Shape',
+    name: 'La Forma',
     isDefault: false,
     perks: [
       { id: 'play_with_food', name: 'Play With Your Food', desc: 'Romper una persecución sin matar da tokens de Haste.' },
@@ -57,7 +54,7 @@ export const killers = [
   },
   {
     id: 'hag',
-    name: 'The Hag',
+    name: 'La Bruja',
     isDefault: false,
     perks: [
       { id: 'hex_ruin', name: 'Hex: Ruin', desc: 'Hex: todos los good/great skill checks en gens causan retroceso.' },
@@ -67,7 +64,7 @@ export const killers = [
   },
   {
     id: 'doctor',
-    name: 'The Doctor',
+    name: 'El Doctor',
     isDefault: false,
     perks: [
       { id: 'overwhelming_presence', name: 'Overwhelming Presence', desc: 'Supervivientes en tu radio agotan sus objetos más rápido.' },
@@ -77,7 +74,7 @@ export const killers = [
   },
   {
     id: 'huntress',
-    name: 'The Huntress',
+    name: 'La Cazadora',
     isDefault: false,
     perks: [
       { id: 'beast_of_prey', name: 'Beast of Prey', desc: 'Al ganar Bloodlust, ganas Undetectable por 30/35/40s.' },
@@ -87,7 +84,7 @@ export const killers = [
   },
   {
     id: 'cannibal',
-    name: 'The Cannibal',
+    name: 'El Canibal',
     isDefault: false,
     perks: [
       { id: 'bbq', name: 'Barbecue & Chili', desc: 'Al enganchar, ves auras de supervivientes a 60m por 4s.' },
@@ -97,7 +94,7 @@ export const killers = [
   },
   {
     id: 'nightmare',
-    name: 'The Nightmare',
+    name: 'La Pesadilla',
     isDefault: false,
     perks: [
       { id: 'blood_warden', name: 'Blood Warden', desc: 'Al ser enganchado el último superviviente, bloquea las salidas por 30s.' },
@@ -107,7 +104,7 @@ export const killers = [
   },
   {
     id: 'pig',
-    name: 'The Pig',
+    name: 'La Cerda',
     isDefault: false,
     perks: [
       { id: 'make_your_choice', name: 'Make Your Choice', desc: 'Al desengancharse solo un superviviente, el rescatador queda Exposed por 60s.' },
@@ -117,7 +114,7 @@ export const killers = [
   },
   {
     id: 'clown',
-    name: 'The Clown',
+    name: 'El Payaso',
     isDefault: false,
     perks: [
       { id: 'bamboozle', name: 'Bamboozle', desc: 'Al saltar una ventana, se bloquea para supervivientes por 8/12/16s.' },
@@ -127,7 +124,7 @@ export const killers = [
   },
   {
     id: 'spirit',
-    name: 'The Spirit',
+    name: 'La Espiritu',
     isDefault: false,
     perks: [
       { id: 'haunted_grounds', name: 'Haunted Ground', desc: 'Copia de The Shape.' },
@@ -137,7 +134,7 @@ export const killers = [
   },
   {
     id: 'legion',
-    name: 'The Legion',
+    name: 'La Legion',
     isDefault: false,
     perks: [
       { id: 'discordance', name: 'Discordance', desc: 'Cuando 2+ supervivientes reparan el mismo gen, ves su aura por 8s.' },
@@ -147,7 +144,7 @@ export const killers = [
   },
   {
     id: 'plague',
-    name: 'The Plague',
+    name: 'La Plaga',
     isDefault: false,
     perks: [
       { id: 'corrupt_intervention', name: 'Corrupt Intervention', desc: 'Al inicio, los 3 gens más lejanos de ti se bloquean por 120s.' },
@@ -167,7 +164,7 @@ export const killers = [
   },
   {
     id: 'demogorgon',
-    name: 'The Demogorgon',
+    name: 'El Demogorgon',
     isDefault: false,
     perks: [
       { id: 'cruel_limits', name: 'Cruel Limits', desc: 'Al completar un gen, todas las ventanas cercanas se bloquean por 20s.' },
@@ -177,7 +174,7 @@ export const killers = [
   },
   {
     id: 'oni',
-    name: 'The Oni',
+    name: 'El Oni',
     isDefault: false,
     perks: [
       { id: 'blood_echo', name: 'Blood Echo', desc: 'Al activar el poder, todos los supervivientes heridos quedan Exhausted.' },
@@ -187,7 +184,7 @@ export const killers = [
   },
   {
     id: 'deathslinger',
-    name: 'The Deathslinger',
+    name: 'El Arponero',
     isDefault: false,
     perks: [
       { id: 'gearhead', name: 'Gearhead', desc: 'Al derribar a un superviviente, los great skill checks en gens revelan su aura.' },
@@ -197,7 +194,7 @@ export const killers = [
   },
   {
     id: 'executioner',
-    name: 'The Executioner',
+    name: 'El Verdugo',
     isDefault: false,
     perks: [
       { id: 'forced_penance', name: 'Forced Penance', desc: 'Supervivientes que protegen a otros quedan Broken por 80s.' },
@@ -207,7 +204,7 @@ export const killers = [
   },
   {
     id: 'blight',
-    name: 'The Blight',
+    name: 'El Deterioro',
     isDefault: false,
     perks: [
       { id: 'dragon_breath', name: "Dragon's Grip", desc: 'Al dañar un gen, queda con trampas. El primer superviviente que lo toque grita y queda Exposed.' },
@@ -217,7 +214,7 @@ export const killers = [
   },
   {
     id: 'twins',
-    name: 'The Twins',
+    name: 'Los Mellizos',
     isDefault: false,
     perks: [
       { id: 'coup_de_grace', name: 'Coup de Grâce', desc: 'Por cada gen completado, un token que alarga tu próximo ataque de lunge.' },
@@ -227,7 +224,7 @@ export const killers = [
   },
   {
     id: 'trickster',
-    name: 'The Trickster',
+    name: 'El Embaucador',
     isDefault: false,
     perks: [
       { id: 'hex_crowd_control', name: 'Hex: Crowd Control', desc: 'Hex: los supervivientes que saltan ventanas las bloquean por 20s.' },
@@ -237,7 +234,7 @@ export const killers = [
   },
   {
     id: 'nemesis',
-    name: 'The Nemesis',
+    name: 'El Nemesis',
     isDefault: false,
     perks: [
       { id: 'awakened_awareness', name: 'Awakened Awareness', desc: 'Cargando a un superviviente, ves los auras de supervivientes cercanos.' },
@@ -247,7 +244,7 @@ export const killers = [
   },
   {
     id: 'cenobite',
-    name: 'The Cenobite',
+    name: 'El Cenobita',
     isDefault: false,
     perks: [
       { id: 'hex_plaything_c', name: 'Hex: Plaything', desc: 'Copia de The Twins.' },
@@ -257,7 +254,7 @@ export const killers = [
   },
   {
     id: 'artist',
-    name: 'The Artist',
+    name: 'La Artista',
     isDefault: false,
     perks: [
       { id: 'birds_of_omen', name: 'Grim Embrace', desc: 'Tras enganchar cada superviviente una vez, bloqueas todos los gens por 40s y ves al Obsession.' },
@@ -267,7 +264,7 @@ export const killers = [
   },
   {
     id: 'onryo',
-    name: 'The Onryō',
+    name: 'La Onryō',
     isDefault: false,
     perks: [
       { id: 'call_darkness', name: 'Call of Brine', desc: 'Al dañar un gen, queda bajo efecto Call of Brine: great skill checks lo explotan.' },
@@ -277,7 +274,7 @@ export const killers = [
   },
   {
     id: 'dredge',
-    name: 'The Dredge',
+    name: 'La Draga',
     isDefault: false,
     perks: [
       { id: 'dissolution', name: 'Dissolution', desc: 'Tras romper un pallet, los supervivientes que lo usen por 15s lo romperán al usarlo.' },
@@ -287,7 +284,7 @@ export const killers = [
   },
   {
     id: 'mastermind',
-    name: 'The Mastermind',
+    name: 'La Mente Maestra',
     isDefault: false,
     perks: [
       { id: 'awakened_awareness_m', name: 'Awakened Awareness', desc: 'Copia de The Nemesis.' },
@@ -297,7 +294,7 @@ export const killers = [
   },
   {
     id: 'knight',
-    name: 'The Knight',
+    name: 'El Caballero',
     isDefault: false,
     perks: [
       { id: 'nowhere_to_hide_k', name: 'Nowhere to Hide', desc: 'Copia de The Nemesis.' },
@@ -307,7 +304,7 @@ export const killers = [
   },
   {
     id: 'skull_merchant',
-    name: 'The Skull Merchant',
+    name: 'El Comerciante de Calaveras',
     isDefault: false,
     perks: [
       { id: 'nowhere_to_hide_sm', name: 'Nowhere to Hide', desc: 'Copia de The Nemesis.' },
@@ -317,7 +314,7 @@ export const killers = [
   },
   {
     id: 'singularity',
-    name: 'The Singularity',
+    name: 'La Singularidad',
     isDefault: false,
     perks: [
       { id: 'genetic_limits', name: 'Genetic Limits', desc: 'Al dañar un gen con poder, los supervivientes en él quedan Exhausted.' },
@@ -327,7 +324,7 @@ export const killers = [
   },
   {
     id: 'xenomorph',
-    name: 'The Xenomorph',
+    name: 'El Xenomorfo',
     isDefault: false,
     perks: [
       { id: 'alien_instinct', name: 'Alien Instinct', desc: 'Al enganchar, el superviviente más lejano herido queda Oblivious y ves su aura.' },
@@ -337,7 +334,7 @@ export const killers = [
   },
   {
     id: 'good_guy',
-    name: 'The Good Guy',
+    name: 'El Buen Chico',
     isDefault: false,
     perks: [
       { id: 'batteries_included', name: 'Batteries Included', desc: 'Cerca de un gen completado, ganas +5% de Haste.' },
@@ -347,7 +344,7 @@ export const killers = [
   },
   {
     id: 'unknown',
-    name: 'The Unknown',
+    name: 'Lo Desconocido',
     isDefault: false,
     perks: [
       { id: 'hex_two_can_play_u', name: 'Hex: Two Can Play', desc: 'Copia de The Good Guy.' },
@@ -357,7 +354,7 @@ export const killers = [
   },
   {
     id: 'lich',
-    name: 'The Lich',
+    name: 'El Liche',
     isDefault: false,
     perks: [
       { id: 'hex_blood_warden', name: 'Hex: Blood Warden', desc: 'Copia mejorada de The Nightmare.' },
@@ -367,7 +364,7 @@ export const killers = [
   },
   {
     id: 'dark_lord',
-    name: 'The Dark Lord',
+    name: 'El Señor Oscuro',
     isDefault: false,
     perks: [
       { id: 'hex_monstrous', name: 'Hex: Monstrous Shrine', desc: 'Hex: engancharse en el sótano lleva más tiempo y da desventajas.' },
@@ -377,7 +374,7 @@ export const killers = [
   },
   {
     id: 'houndmaster',
-    name: 'The Houndmaster',
+    name: 'La Maestra de Perros',
     isDefault: false,
     perks: [
       { id: 'all_shaking', name: 'All-Shaking Thunder', desc: 'Tras caer de altura, tus ataques de lunge son más largos por 15s.' },
@@ -387,7 +384,7 @@ export const killers = [
   },
   {
     id: 'vecna',
-    name: 'The Lich (Vecna)',
+    name: 'El Primero',
     isDefault: false,
     perks: [
       { id: 'languid_touch_v', name: 'Languid Touch', desc: 'Copia.' },
@@ -397,7 +394,7 @@ export const killers = [
   },
   {
     id: 'ghoul',
-    name: 'The Ghoul',
+    name: 'El Ghoul',
     isDefault: false,
     perks: [
       { id: 'predatory_omen', name: 'Predatory Omen', desc: 'Ves el aura de los supervivientes que te han visto en los últimos 8s.' },
@@ -407,7 +404,7 @@ export const killers = [
   },
   {
     id: 'springtrap',
-    name: 'The Springtrap',
+    name: 'El Animatronico',
     isDefault: false,
     perks: [
       { id: 'end_transmission', name: 'End Transmission', desc: 'Ves auras de supervivientes que han reparado más del 50% de un gen.' },
@@ -427,7 +424,7 @@ export const killers = [
   },
   {
     id: 'krasue',
-    name: 'The Krasue',
+    name: 'El Krasue',
     isDefault: false,
     perks: [
       { id: 'float_like', name: 'Float Like a Butterfly', desc: 'En forma flotante, eres Undetectable pero tienes radio de visión limitado.' },

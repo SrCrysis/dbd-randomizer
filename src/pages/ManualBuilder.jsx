@@ -25,8 +25,8 @@ function buildFullPool() {
 
   addPerks(survivors)
   addPerks(killers)
-  return pool.sort((a, b) => a.name.localeCompare(b.name))
-}
+
+  return pool.sort((a, b) => a.name.localeCompare(b.name))}
 
 const FULL_POOL = buildFullPool()
 
