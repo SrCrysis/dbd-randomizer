@@ -1,6 +1,6 @@
 # DBD Build Randomizer
 
-Generador de builds aleatorias para Dead by Daylight, basado en los personajes que tienes desbloqueados.
+Generador de builds aleatorias para Dead by Daylight, basado en perks desbloqueadas/personajes desbloqueados
 
 ## Stack
 - **React 18** + **Vite** — Frontend framework + bundler
