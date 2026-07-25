@@ -90,7 +90,7 @@ export function PerkCard({ perk, isLocked, onLockToggle, onReroll, slotIndex, is
       )}
 
       {/* Descripción */}
-      <p className="text-ash-400 text-xs leading-relaxed line-clamp-3">
+      <p className="text-ash-400 text-xs leading-relaxed">
         {perk.desc}
       </p>
 

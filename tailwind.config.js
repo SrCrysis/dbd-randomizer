@@ -32,7 +32,7 @@ export default {
       },
       fontFamily: {
         display: ['"Cinzel"', 'serif'],
-        body: ['"Inter"', 'sans-serif'],
+        body: ['"Rajdhani"', 'sans-serif'],
       },
       backgroundImage: {
         'fog-gradient': 'radial-gradient(ellipse at center, #1a1a28 0%, #0a0a0f 100%)',

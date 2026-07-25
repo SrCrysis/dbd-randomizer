@@ -3,15 +3,36 @@
 // Las perks generales (teachable para todos) van en perks.js por separado
 
 export const survivors = [
-  
+    
   {
-    id: 'dwight',
-    name: 'Dwight Fairfield',
+    id: 'base_survivor',
+    name: 'Perks Default',
     isDefault: true,
     perks: [
       { id: 'bond', name: 'Vinculo', desc: 'Ves las auras de los supervivientes cercanos a 20/28/36m.' },
       { id: 'prove_thyself', name: 'Demuestra lo que vales', desc: 'Reparar con otros supervivientes te da +15% de velocidad.' },
       { id: 'leader', name: 'Lider', desc: 'Supervivientes a 8m se benefician de +15% de velocidad en acciones.' },
+    ]
+  },
+  {
+    id: 'dwight',
+    name: 'Dwight Fairfield',
+    isDefault: true,
+    perks: [
+      { id: 'slippery_meat', name: 'Carne Resbalosa', desc: 'Te otorga 3 Intentos de Escape Adicionales cuando estas colgado en el gancho en la primera fase, ademas aumenta la probabilidad de liberarte por ti mismo en un 4%.' },
+      { id: 'small_game', name: 'Caza Menor', desc: 'Te avisa con una alerta sonora cuando miras en un cono de 45 grados en direccion a un Totem o una trampa del Killer dentro de un rango de 12m. Tiene un tiempo de recarga de 10s por Totem que purifiques o bendigas en la partida, el cono de deteccion se reduce en 5 grados.' },
+      { id: 'dark_sense', name: 'Sentido Oscuro', desc: 'Cuando se completa un Generador, la ventaja queda activa. La proxima vez que el Killer se acerque a menos de 24m de ti, se consume la ventaja y revel su Aura por 10s.' },
+      { id: 'plunderers_instinct', name: 'Instinto de saqueador', desc: 'Revela las Auras de los Cofres Cerrados y de los objetos tirados en el suelo en un Radio de 32m. Aumenta considerablemente la probabilidad de encontrar objetos de mayor rareza al abrir cofres.' },
+      { id: 'lightweight', name: 'Pies Ligeros', desc: 'Hace que las marcas de arañazos aparezcan de manera esporadica e inconsistente para confundir al Killer. Ademas, reduce el tiempo que las marcas permanecen visibles en el mapa en 5s.' },
+      { id: 'deja_vu', name: 'Deja Vu', desc: 'Al inicio de la partida y cada vez que se repara un Generador, te revela de forma permanente el Aura de los 3 Generadores que estan mas juntos en el mapa. Te otorga un 6% de velocidad adicional de reparacion de forma permanente en esos 3 Generadores especificos señalados.' },
+      { id: 'resilience', name: 'Resiliencia', desc: 'Mientras te encuentres en el Estado de Herido, recibes una bonificacion de velocidad en practicamente todas tus acciones fisicas. Aumenta en un 9% tu velocidad de reparar, curar, sabotear, descolgar, saltar ventanas/pallets, abrir puertas de salida y limpiar totems.' },
+      { id: 'hope', name: 'Esperanza', desc: 'Se activa unicamente cuando se repara los 5 Generadores y se energizan las Puertas de Salida. Te otorga el Estado Haste de forma permanente, aumentando tu velocidad de movimiento en un 7%' },
+      { id: 'no_one_left_behind', name: 'Nadie Se Queda Atras', desc: 'Se activa en cuanto las Puertas de Salida reciben energia. Otorga un 50% de velocidad extra para descolgar y curar, te permite ver las Auras de todos los Supervivientes, otorga un 100% de Puntos de Sangre extra en Altruismo y da un 7% de Haste al superviviente que acabas de descolgar.' },
+      { id: 'well_make_it', name: 'Lo Lograremos', desc: 'Cada vez que descuelgas con exito a un superviviente de un gancho, la ventaja se activa durante los proximos 90s. Aumenta tu velocidad de uracion a otros Supervivientes en un 100%.' },
+      { id: 'kindred', name: 'Familia', desc: 'Cuando tu estas en el gancho, todos tus compañeros pueden ver las auras de los demas y, si el asesino esta en menos de 16m del Gancho tambien veran su Aura. Si un Compañero esta en el gancho, tu obtienes este mismo beneficio de vision.' },
+      { id: 'permonition', name: 'Premonicion', desc: 'Recibes una advertencia auditiva cada vez que miras en direccion al asesino en un cono de 45 grados dentro de un rango de 36m. Tiene un tiempo de recarga de 30s tras activarse.' },
+      { id: 'spine_chill', name: 'Escalofrios', desc: 'El icono de la Perk se ilumina si el Killer esta a menos de 36m con linea de vision directa. Si te mira directamente, obtienes un 6% de velocidad de accion, pero el efecto se pierde 0.5 segundos despues de que rompa la linea de vision.' },
+      { id: 'this_is_not_happening', name: 'Esto No Puede Estar Pasando', desc: 'Al estar Herido, aumenta el tamaño de la zona de Exito Excelente en los SkillChecks de reparacion y curacion en un 30%.' },
     ]
   },
   {
