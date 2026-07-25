@@ -9,16 +9,7 @@ export const survivors = [
     name: 'Perks Default',
     isDefault: true,
     perks: [
-      { id: 'bond', name: 'Vinculo', desc: 'Ves las auras de los supervivientes cercanos a 20/28/36m.' },
-      { id: 'prove_thyself', name: 'Demuestra lo que vales', desc: 'Reparar con otros supervivientes te da +15% de velocidad.' },
-      { id: 'leader', name: 'Lider', desc: 'Supervivientes a 8m se benefician de +15% de velocidad en acciones.' },
-    ]
-  },
-  {
-    id: 'dwight',
-    name: 'Dwight Fairfield',
-    isDefault: true,
-    perks: [
+
       { id: 'slippery_meat', name: 'Carne Resbalosa', desc: 'Te otorga 3 Intentos de Escape Adicionales cuando estas colgado en el gancho en la primera fase, ademas aumenta la probabilidad de liberarte por ti mismo en un 4%.' },
       { id: 'small_game', name: 'Caza Menor', desc: 'Te avisa con una alerta sonora cuando miras en un cono de 45 grados en direccion a un Totem o una trampa del Killer dentro de un rango de 12m. Tiene un tiempo de recarga de 10s por Totem que purifiques o bendigas en la partida, el cono de deteccion se reduce en 5 grados.' },
       { id: 'dark_sense', name: 'Sentido Oscuro', desc: 'Cuando se completa un Generador, la ventaja queda activa. La proxima vez que el Killer se acerque a menos de 24m de ti, se consume la ventaja y revel su Aura por 10s.' },
@@ -33,6 +24,17 @@ export const survivors = [
       { id: 'permonition', name: 'Premonicion', desc: 'Recibes una advertencia auditiva cada vez que miras en direccion al asesino en un cono de 45 grados dentro de un rango de 36m. Tiene un tiempo de recarga de 30s tras activarse.' },
       { id: 'spine_chill', name: 'Escalofrios', desc: 'El icono de la Perk se ilumina si el Killer esta a menos de 36m con linea de vision directa. Si te mira directamente, obtienes un 6% de velocidad de accion, pero el efecto se pierde 0.5 segundos despues de que rompa la linea de vision.' },
       { id: 'this_is_not_happening', name: 'Esto No Puede Estar Pasando', desc: 'Al estar Herido, aumenta el tamaño de la zona de Exito Excelente en los SkillChecks de reparacion y curacion en un 30%.' },
+    ]
+  },
+  {
+    id: 'dwight',
+    name: 'Dwight Fairfield',
+    isDefault: true,
+    perks: [
+    
+      { id: 'bond', name: 'Vinculo', desc: 'Ves las auras de los supervivientes cercanos a 20/28/36m.' },
+      { id: 'prove_thyself', name: 'Demuestra lo que vales', desc: 'Reparar con otros supervivientes te da +15% de velocidad.' },
+      { id: 'leader', name: 'Lider', desc: 'Supervivientes a 8m se benefician de +15% de velocidad en acciones.' },
     ]
   },
   {
